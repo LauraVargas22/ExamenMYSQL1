@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS members(
 CREATE TABLE IF NOT EXISTS books_transaction(
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_member INT,
+    description VARCHAR(20),
     CONSTRAINT id_member_FK FOREIGN KEY (id_member) REFERENCES members(id)
 );
 
